@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Connecting TikTok…</title></head>
+<body style="font:16px system-ui,sans-serif;margin:40px">
+<p>Finishing the TikTok connection… If nothing happens, make sure Clip Finder is running on this computer.</p>
+<script>
+  // TikTok only allows https redirect addresses, but Clip Finder runs at http://localhost on your computer.
+  // This page just hands TikTok's one-time code to your local app. Nothing is stored or sent anywhere else.
+  location.replace("http://localhost:8000/api/social/tiktok/callback" + location.search);
+</script></body></html>
